@@ -1,6 +1,6 @@
 <?php
 
-namespace Rest;
+namespace RW\Rest;
 
 use Throwable;
 
