@@ -1,0 +1,18 @@
+{
+  "name": "revenuewire/rest-exception",
+  "type": "library",
+  "description": "Handle RW Exception",
+  "homepage": "https://github.com/revenuewire/rest-exception",
+  "license": "Apache License 2.0",
+  "authors": [
+    {
+      "name": "Scott Wang",
+      "email": "swang@revenuewire.com"
+    }
+  ],
+  "autoload": {
+    "psr-4" : {
+      "RW\\" : "src/"
+    }
+  }
+}
