@@ -85,7 +85,7 @@ class Exception extends \Exception
         $text = trim($text, '-');
 
         // transliterate
-        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+        $text = @iconv('utf-8', 'us-ascii//TRANSLIT', $text);
 
         // lowercase
         $text = strtolower($text);
