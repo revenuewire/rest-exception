@@ -26,7 +26,7 @@ class Exception extends \Exception
         if (empty($key)) {
             $messageKey = self::slugify($message);
             if (strlen($messageKey) > self::KEY_LENGTH) {
-                $this->key = substr($messageKey, 0, self::KEY_LENGTH) . "-" . hash_hmac("crc32", substr($messageKey, self::KEY_LENGTH+1), "");
+                $this->key = substr($messageKey, 0, self::KEY_LENGTH) . "-" . hash_hmac("sha256", substr($messageKey, self::KEY_LENGTH+1), "");
             } else {
                 $this->key = $messageKey;
             }
